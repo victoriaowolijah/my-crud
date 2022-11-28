@@ -1,27 +1,38 @@
 <template>
-    <div class="my-form">
-        <form class="ui form">
-            <div class="fields">
-                <div class="four wild field">
-                    <label>First Name</label>
-                    <input type="text" name="First_name" placeholder="First Name"/>
-                </div>
-                
-                <div class="four wide field">
-                    <label>Last name</label>
-                    <input type="text" name="last_name" placeholder="Last Name"/>
-                </div>
-
-                <div class="six  wide field">
-                    <label>E-mail</label>
-                    <input type="email" name="Doe@gmailcom" placeholder="Last Name"/>
-                </div>
-                
-                <div class="two side field">
-                    <button class="ui primary button submit-button">Save</button>
+    <div class="vic__container">
+        <div class="vic__row">
+            <div class="vic__col_1">
+                <h1 class="vic__form__title">Form Title </h1>
+                <div class="my-form">
+                    <form class="vic__form">
+                        <div class="form__section">
+                            <div class="form__group">
+                                <label class="form__label">First Name
+                                    <input class="form__control" type="text" name="First_name"
+                                        placeholder="First Name" />
+                                </label>
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label">Last Name
+                                    <input class="form__control" type="text" name="last_name" placeholder="Last Name" />
+                                </label>
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label">email
+                                    <input class="form__control" type="email" name="email"
+                                        placeholder="email@example.com" />
+                                </label>
+                            </div>
+                            <div class="form__group">
+                                <div class="form__button_section">
+                                    <button class="form__button" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </form>
+        </div>
     </div>
 </template>
 
@@ -32,4 +43,5 @@ export default {
 </script>
 
 <style scoped>
+
 </style>
